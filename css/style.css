@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+      font-family: 'Andada', sans-serif;
 }
 
 .clear-fix {
@@ -24,23 +24,28 @@ h6 {
   padding: 0 5%;
 }
 
+
+#topContacts {
+  padding-bottom: 50px;
+}
+
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #CDC9C9;
   line-height: 48px;
   display: inline;
+  padding-right: 13px;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
+  font-style: normal;
   font-size: 20px;
   color: #000;
   line-height: 22px;
@@ -63,19 +68,21 @@ h5 {
 
 
 .date-text {
-  font-style: italic;
+  font-style: normal;
   font-size: 14px;
   color: #999;
   line-height: 16px;
   float: left;
+  padding-right: 20px;
 }
 
 .location-text {
-  font-style: italic;
+  font-style: normal;
   font-size: 14px;
   color: #999;
   line-height: 16px;
   float: right;
+  padding-right: 5px;
 
 }
 
@@ -93,43 +100,47 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
+  font-style: normal;
+  font-size: 16px;
+  color: #8B8989;
+  line-height: 60px;
+  padding-left: 10px;
 }
 
+
 #skills-h3 {
-  color: #f5ae23;
+  color: #CC1100;
   display: none;
+  padding-top: 5px;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #CDC9C9;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #CC1100;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+  color: #CDC9C9;
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: white;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #222;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #222;
+  padding: 45px;
+  padding-bottom: 20px;
 }
 
 .flex-box {
@@ -151,22 +162,74 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  padding: 20px;
   width: 200px;
   display: none;
 }
 
 img {
-  padding: 10px;
+  padding: 20px;
+  padding-left: 0px;
+  max-width: 100%;
 }
 
 span {
   padding: 5px;
+  color: #8B8989;
 }
+#projects {
+  color: #CDC9C9;
+  background-color: #222;
+  padding-bottom: 30px;
+}
+#projects p {
+  color: #CDC9C9;
+}
+
+#projects a {
+  font-size: 19px;
+}
+
+.carousel-outer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+em {
+  font-style: normal;
+  font-size: 14px;
+}
+.school-url {
+  color: royalblue;
+  font-size: 13px;
+  padding-top: 5px; 
+}
+
+.online-url {
+  color: royalblue;
+  font-size: 13px;
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 100px;
+}
+
+#mapDiv {
+  height: 400px;
+  padding-bottom: 7%;
+  padding-top: 1.5%;
+  background-color: #222;
+  color: #CDC9C9;
+
+}
+
 
 #lets-connect {
   text-align: center;
 }
+
 
 /* Media queries to handle various device widths */
 
@@ -194,17 +257,17 @@ span {
   }
 }
 
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+
+@media only screen and (max-width: 650px) {
+  img {
+    max-width: 100%;    
+  }
+  .location-text {
+    display: none;
+  }
 }
 
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
+
 
 @media only screen and (min-width: 750px) {
   #skills-h3,
